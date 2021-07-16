@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.mt-20 {
+    margin-top: 20px !important;
+}
+.ml-10 {
+    margin-left: 10px !important;
+}
+.mr-10 {
+    margin-right: 10px !important;
+}
+.d-flex {
+    display: flex !important;
+}
+/** Section **/
+.section {
+    height: 900px;
+    background-image: linear-gradient(to left, #9F4BA6, #0888D5 );
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.h3-section {
+    text-align: center !important;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 35px;
+}
+.video-area {
+    margin-top: 40px;
+    text-align: center !important;
+}
+.form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 470px;
+    text-align: center;
+    margin-top: 40px;
+}
+.title-form-area {
+    margin-right: auto;
+}
+.h2-form {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+}
+.p-form {
+    font-size: 17px;
+    margin: 5px 0;
+}
+.input-form {
+    font-size: 15px;
+    width: 225px;
+    border-radius: 5px;
+    height: 40px;
+    border: #9F4BA6;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+    padding: 15px;
+    color: #0888D5;
+}
+.input-fone {
+    width: 470px;
+}
+.label {
+    padding: 15px 0;
+}
+.btn-form {
+    font-size: 15px;
+    padding: 15px;
+    font-family: 'Poppins';
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #F6A903, #D9980B );
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+/** Estilo no placeholder **/ 
+::-webkit-input-placeholder {
+    color:#0888D5; 
+    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+
+}
+input:-moz-placeholder {
+    color: #0888D5;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
