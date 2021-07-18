@@ -18,9 +18,12 @@ body {
 .d-flex {
     display: flex !important;
 }
+.bold {
+    font-weight: bold !important;
+}
 /** Section **/
 .section {
-    height: 900px;
+    height: 1000vh;
     background-image: linear-gradient(to left, #9F4BA6, #0888D5 );
     display: flex;
     justify-content: center;
@@ -36,6 +39,7 @@ body {
     color: #FFF;
     font-weight: 500;
     font-size: 35px;
+    width: 80%;
 }
 .video-area {
     margin-top: 40px;
@@ -93,7 +97,36 @@ body {
     margin-top: 15px;
 }
 
-
+.info-area {
+    margin-top: 40px;
+    width: 80%;
+    height: 450px;
+    background-image: url('../images/rocket-teste-2.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 90px;
+}
+.h3-info {
+    text-align: center !important;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 40px;
+}
+.question-area {
+    width: 80%;
+}
+.question {
+    width: 300px;
+}
+.container-question {
+    display: flex;
+    justify-content: space-between;
+}
+.p-question {
+    color: #FFF;
+    font-size: 17.5px;
+    font-weight: 400;
+}
 /** Estilo no placeholder **/ 
 ::-webkit-input-placeholder {
     color:#0888D5; 
@@ -103,4 +136,43 @@ body {
 input:-moz-placeholder {
     color: #0888D5;
     font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+
+
+
+@media only screen and (max-width: 630px) {
+    .h3-info, .h3-section {
+        font-size: 30px;
+    }
+    .video-area > iframe {
+        width: 475px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .video-area > iframe {
+        width: 400px;
+    }
+    .title-form-area {
+        margin-right: unset;
+        margin-bottom: 5px;
+    }
+    .form-area {
+        display: flex;
+        flex-direction: column;
+        text-align: unset;
+    }
+    .form-area > label {
+        display: flex;
+        flex-direction: column;
+    }
+    .label {
+        padding: 0px;
+    }
+    .input-form {
+        font-size: 13px;
+        width: 200px;
+        margin: 10px 0;
+    }
+    
 }
