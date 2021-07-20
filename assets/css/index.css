@@ -21,9 +21,12 @@ body {
 .bold {
     font-weight: bold !important;
 }
+.special-text {
+    color: #F6A903 !important;
+}
 /** Section **/
 .section {
-    height: 1000vh;
+    height: auto;
     background-image: linear-gradient(to left, #9F4BA6, #0888D5 );
     display: flex;
     justify-content: center;
@@ -97,6 +100,10 @@ body {
     margin-top: 15px;
     transition: all ease 0.8s;
 }
+.btn-question a {
+    color: #FFF;
+    text-decoration: none;
+}
 .btn-form:hover {
     transition: all ease-in 0.8s !important;
     background-image: linear-gradient(to bottom, #FFB71C, #FFAF19);
@@ -117,13 +124,18 @@ body {
 }
 .question-area {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    max-height: 370px;
 }
 .question {
     width: 300px;
+    margin: 40px 0;
 }
 .container-question {
     display: flex;
     justify-content: space-between;
+    margin: 40px 0;
 }
 .p-question {
     color: #FFF;
@@ -150,7 +162,7 @@ body {
     background-image: linear-gradient(to bottom, #FFB71C, #FFAF19);
 }
 .consultorias-area {
-    margin-top: 80px;
+    margin-top: 250px;
 }
 .h3-consult {
     text-align: center !important;
@@ -247,6 +259,7 @@ body {
 }
 .img-bonus {
     width: 80%;
+    margin: 7px 0;
 }
 /** Estilo no placeholder **/ 
 ::-webkit-input-placeholder {
@@ -259,18 +272,146 @@ input:-moz-placeholder {
     font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
 }
 
+@media only screen and (max-width: 1150px) {
+    .question {
+        width: 255px;
+    }
+    .bonus-container {
+        padding: 0 20px;
+    }
+    .bonus-area {
+        text-align: center !important;
+    }
+}
+
+
+@media only screen and (max-width: 1110px) {
+    .container-consultoria, .cont {
+        flex-wrap: wrap;
+    }
+    .container-question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .question-area {
+        max-height: 100vw;
+    }
+    .question {
+        width: 60%;
+    }
+    .consultorias-area {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .consultorias-area {
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 945px) {
+    .consultorias-area {
+        margin-top: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+    .consultorias-area {
+        margin-top: 350px;
+    }
+    .container-feedback > iframe {
+        width: 540px;
+    }
+    .img-feed {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .consultorias-area {
+        margin-top: 400px;
+    }
+}
+@media only screen and (max-width: 775px) {
+    .consultorias-area {
+        margin-top: 500px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .consultorias-area {
+        margin-top: 600px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .video-area > iframe {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 714px) {
+    .consultorias-area {
+        margin-top: 700px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .consultorias-area {
+        margin-top: 850px;
+    }
+}
 
 
 @media only screen and (max-width: 630px) {
-    .h3-info, .h3-section {
+    .h3-info, .h3-section, .h3-consult, .h3-bonus, .h3-feedback {
         font-size: 30px;
+    }
+    .h3-bonus-sbtitle {
+        font-size: 25px;
     }
     .video-area > iframe {
         width: 475px;
     }
+    .question {
+        width: 75%;
+    }
+    .consultorias-area {
+        margin-top: 600px;
+    }
+    .bonus-imagem-area {
+        column-count: 1;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 595px) {
+    .consultorias-area {
+        margin-top: 680px;
+    }
+    .container-feedback > iframe {
+        width: 470px;
+    }
+    .img-feed {
+       width: 215px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .consultorias-area {
+        margin-top: 780px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .consultorias-area {
+        margin-top: 875px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+
 }
 
 @media only screen and (max-width: 490px) {
+    .consultorias-area {
+        margin-top: 975px;
+    }
     .video-area > iframe {
         width: 400px;
     }
@@ -282,6 +423,7 @@ input:-moz-placeholder {
         display: flex;
         flex-direction: column;
         text-align: unset;
+        width: 100%;
     }
     .form-area > label {
         display: flex;
@@ -295,5 +437,86 @@ input:-moz-placeholder {
         width: 200px;
         margin: 10px 0;
     }
-    
+    .container-feedback > iframe {
+        width: 300px;
+    }
+    .img-feedback-area {
+        flex-direction: column;
+    }
+    .img-feed {
+        width: 300px;
+        margin: 7px 0;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .video-area > iframe {
+        width: 325px;
+    }
+    .consultorias-area {
+        margin-top: 1025px;
+    }
+    .desc-feedback {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .consultorias-area {
+        margin-top: 1052px;
+    }
+}
+@media only screen and (max-width: 438px) {
+    .question-area {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .consultorias-area {
+        margin-top: 1200px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .info-area {
+        background-image: url('../images/rocket-mobile.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+}
+@media only screen and (max-width: 393px) {
+    .consultorias-area {
+        margin-top: 1300px;
+    }
+}
+@media only screen and (max-width: 387px) {
+    .question-area {
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 369px) {
+    .consultorias-area {
+        margin-top: 1440px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .video-area > iframe {
+        width: 290px;
+    }
+    .consultorias-area {
+        margin-top: 1550px;
+    }
+}
+@media only screen and (max-width: 325px) {
+    .h3-info, .h3-section, .h3-consult, .h3-bonus, .h3-feedback {
+        font-size: 27px;
+    }
+    .btn-form {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .consultorias-area {
+        margin-top: 1625px;
+    }
 }

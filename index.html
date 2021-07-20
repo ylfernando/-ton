@@ -37,52 +37,52 @@
 
                 <label class="label d-flex">
                     <input placeholder="E-mail" type="text" name="nome" class=" ml-10 mr-10 input-form">
-                    <input placeholder="Telefone (DDD + Número)" type="text" name="nome" class="ml-10 mr-10 input-form">
+                    <input id="telefone" placeholder="Telefone (DDD + Número)" type="text" name="nome" class="ml-10 mr-10 input-form">
                 </label>
 
                 <label class="label d-flex">
                     <input placeholder="Cidade" type="text" name="nome" class=" input-fone input-form">
                 </label>
-                <input type="submit" class="btn-form" value="Envie e ganhe uma consultoria gratuita">
+                <input id="form" type="submit" class="btn-form" value="Envie e ganhe uma consultoria gratuita">
             </form>
 
             <div class="info-area">
-                <h3 class="h3-info mt-20">Áton consultoria em marketing é especialista em ajudar a sua empresa na escala e crescimento deste nesse novo comércio.</h3>
-            </div>
+                <h3 class="h3-info mt-20">Áton consultoria em marketing é especialista em ajudar a sua empresa na escala e <span class="special-text">crescimento</span> deste <span class="special-text">novo comércio</span>.</h3>
+                </div>
             <div class="question-area">
 
                 <h3 class="h3-info mt-20">Qual o principal motivo que faz com que empresas não se destaquem nesse momento?</h3>
 
                 <div class="container-question mt-20">
 
-                <div class="question mt-20">
+                <div class="question">
                     <p class="p-question">
                         <span class="bold">1 -</span>
                         O proprietário tem baixo entendimento nos processos de marketing.
                         Quando tu não entende, você não consegue exigir qualidade, existem muitas agências lucrando sem gerar resultado só porque o contratante não tem conhecimento para cobrar.
                     </p>
                     <button type="button" class="btn-question">
-                        Consultoria gratuita
+                        <a href="#form">Consultoria gratuita</a>
                     </button>
                 </div>
 
-                <div class="question mt-20">
+                <div class="question">
                     <p class="p-question">
                         <span class="bold">2 -</span>
                         O proprietário tem um conhecimento baixo ou 0 em tráfego pago dentro de redes sociais como Facebook e Instagram e também posicionamento no Google, o qual é a plataforma mais utilizada para pesquisas de produtos e serviços no mundo.
                     </p>
                     <button type="button" class="btn-question">
-                        Consultoria gratuita
+                        <a href="#form">Consultoria gratuita</a>
                     </button>
                 </div>
 
-                <div class="question mt-20">
+                <div class="question">
                     <p class="p-question">
                         <span class="bold">3 -</span>
                        A empresa não possui uma imagem humana na entrega de seus produtos e serviços, redes sociais servem para socialização, e quanto mais socialmento, humano, amigavel e confiavel transparecer o seu negócio mais bem aceito pelo publico ele será.
                     </p>
                     <button type="button" class="btn-question">
-                        Consultoria gratuita
+                        <a href="#form">Consultoria gratuita</a>
                     </button>
                 </div>
                 </div>
@@ -172,10 +172,23 @@
                         <img src="assets/images/bonus/bonus-2.jpg" class="img-bonus">
 
                         <img src="assets/images/bonus/bonus-5.jpg" class="img-bonus">
-                        <img src="assets/images/bonus/bonus-6.jpg" class="img-bonus">
                         </div>
             </div>
         </div>
     </section>
+
+    <!--- Script --->
+    <script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/scroll-suave.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        IMask(
+            document.getElementById('telefone'),
+            {
+                mask: '(00) 00000-0000'
+            }
+        );
+    </script>
 </body>
 </html>
